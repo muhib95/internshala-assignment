@@ -1,23 +1,51 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
+import { CiFacebook } from 'react-icons/ci';
+import { TiSocialTwitterCircular } from 'react-icons/ti';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <div className='grid grid-cols-2 justify-center bg-black text-white p-3'>
+      <div className='grid grid-cols-2'>
+       <h2 className='border-r-2  border-r-white-500 text-center'> LONDON!CAPITAL of United Kingdom</h2>
+       <h2>support@mygov.com</h2>
+      </div>
+      <div className='grid grid-cols-2 '>
+        <h2 className='mr-2 border-r-2  border-r-white-500 text-right'>Call on:1800-123-45-67</h2>
+        <select className='border-none bg-green-600 rounded' name="" id="">
+          <option value="Open today">Open Today:09 to 18</option>
+        </select>
+      </div>
+    </div>
+    <div className='grid grid-cols-3 items-center justify-between'>
+      <div className='p-4'>
+        <h1 className='text-center'>CITIZEN</h1>
+      </div>
+      <div className='flex p-2'>
+        <ul className='flex'>
+          <li className='mr-4'>Explore</li>
+          <li className='mr-4'>Home</li>
+          <li className='mr-4'>City Govt</li>
+          <li className='mr-4'>Departments</li>
+          <li className='mr-4'>Events</li>
+          <li className='mr-4'>City News</li>
+          <li className='mr-4'>Contact</li>
+          <li className='mr-4'>
+          <select className='border-none  rounded' name="" id="">
+          <option value="English">English</option>
+        </select>
+          </li>
+        </ul>
+      </div>
+      <div className='flex text-center'>
+        <CiFacebook className='mr-4'></CiFacebook>
+        <TiSocialTwitterCircular className='mr-4'></TiSocialTwitterCircular>
+        <TiSocialLinkedinCircular className='mr-4'></TiSocialLinkedinCircular>
+
+      </div>
+    </div>
     </div>
   );
 }

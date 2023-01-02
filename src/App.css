@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-image{
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 700px;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(12, 12, 1, 0.5),
+    rgba(1, 1, 19, 0.5)
+  ), url(./acc/image.jpg);
+}

@@ -4,6 +4,7 @@ import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { CiFacebook } from 'react-icons/ci';
 import { TiSocialTwitterCircular } from 'react-icons/ti';
 
+
 function App() {
   return (
     <div >
@@ -19,7 +20,7 @@ function App() {
         </select>
       </div>
     </div>
-    <div className='grid grid-cols-3 items-center justify-between'>
+    <div className='grid grid-cols-3 items-center justify-around text-base h-28'>
       <div className='p-4'>
         <h1 className='text-center'>CITIZEN</h1>
       </div>
@@ -45,6 +46,15 @@ function App() {
         <TiSocialLinkedinCircular className='mr-4'></TiSocialLinkedinCircular>
 
       </div>
+    </div>
+    <div className='bg-image text-white grid grid-cols-2 justify-items-center'>
+      <div className='w-1/2 mt-96 text-lg'>
+      <h2 className='text-6xl'>SAVE TIME,</h2>
+      <h2 className='text-6xl'>PAY YOUR TAX </h2>
+      <h2 className='text-6xl'>ONLINE</h2>
+      <p>We're starting off with a handful of spots that should also be on your bucket list</p>
+      </div>
+
     </div>
     </div>
   );

@@ -5,6 +5,10 @@ import { CiFacebook } from 'react-icons/ci';
 import { TiSocialTwitterCircular } from 'react-icons/ti';
 import { BsSearch } from 'react-icons/bs';
 import { RxDoubleArrowDown } from 'react-icons/rx';
+import { TfiWorld } from 'react-icons/tfi';
+import { BiChevronRight} from 'react-icons/bi';
+import { AiOutlineMail} from 'react-icons/ai';
+import { BsFillTelephoneFill} from 'react-icons/bs';
 
 
 
@@ -13,21 +17,22 @@ function App() {
     <div >
     <div className='grid grid-cols-2 justify-center bg-black text-white p-3'>
       <div className='grid grid-cols-2'>
-       <h2 className='border-r-2  border-r-white-500 text-center'> LONDON!CAPITAL of United Kingdom</h2>
-       <h2>support@mygov.com</h2>
+       <h2 className='border-r-2  border-r-white-500  '> LONDON!CAPITAL of United Kingdom <BiChevronRight className='inline'></BiChevronRight></h2>
+      
+       <h2 className='ml-3'><AiOutlineMail className='inline'></AiOutlineMail> support@mygov.com</h2>
       </div>
       <div className='grid grid-cols-2 '>
-        <h2 className='mr-2 border-r-2  border-r-white-500 text-right'>Call on:1800-123-45-67</h2>
+        <h2 className='mr-3 border-r-2  border-r-white-500 text-right'><BsFillTelephoneFill className='inline'></BsFillTelephoneFill> Call on:1800-123-45-67</h2>
         <select className='border-none bg-green-600 rounded' name="" id="">
           <option value="Open today">Open Today:09 to 18</option>
         </select>
       </div>
     </div>
     <div className='flex items-center text-base h-28'>
-      <div className='p-4 grow'>
+      <div className='p-4 grow  border-r-2  border-r-gray-500'>
         <h1 className='text-center'>CITIZEN</h1>
       </div>
-      <div className='flex p-2 grow '>
+      <div className='flex p-2 grow border-r-2  border-r-gray-500'>
         <ul className='flex items-center'>
           <div className='flex items-center'>
           <li className='mr-4'>Explore </li>
@@ -55,6 +60,7 @@ function App() {
           <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
         </div>
           <li className='mr-4'>Contact</li>
+          <TfiWorld></TfiWorld>
           <li className='mr-4'>
           <select className='border-none  rounded' name="" id="">
           <option value="English">English</option>

@@ -3,6 +3,9 @@ import './App.css';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { CiFacebook } from 'react-icons/ci';
 import { TiSocialTwitterCircular } from 'react-icons/ti';
+import { BsSearch } from 'react-icons/bs';
+import { RxDoubleArrowDown } from 'react-icons/rx';
+
 
 
 function App() {
@@ -20,18 +23,37 @@ function App() {
         </select>
       </div>
     </div>
-    <div className='grid grid-cols-3 items-center justify-around text-base h-28'>
-      <div className='p-4'>
+    <div className='flex items-center text-base h-28'>
+      <div className='p-4 grow'>
         <h1 className='text-center'>CITIZEN</h1>
       </div>
-      <div className='flex p-2'>
-        <ul className='flex'>
-          <li className='mr-4'>Explore</li>
-          <li className='mr-4'>Home</li>
-          <li className='mr-4'>City Govt</li>
-          <li className='mr-4'>Departments</li>
-          <li className='mr-4'>Events</li>
-          <li className='mr-4'>City News</li>
+      <div className='flex p-2 grow '>
+        <ul className='flex items-center'>
+          <div className='flex items-center'>
+          <li className='mr-4'>Explore </li>
+         
+         <li><BsSearch ></BsSearch></li>
+          </div>
+        <div className='flex items-center'>
+        <li className='mr-4'>Home</li>
+          <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
+        </div>
+        <div className='flex items-center'>
+        <li className='mr-4'>City Govt</li>
+          <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
+        </div>
+        <div className='flex items-center'>
+        <li className='mr-4'>Departments</li>
+          <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
+        </div>
+        <div className='flex items-center'>
+        <li className='mr-4'>Events</li>
+          <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
+        </div>
+        <div className='flex items-center'>
+        <li className='mr-4'>City News</li>
+          <li><RxDoubleArrowDown></RxDoubleArrowDown></li>
+        </div>
           <li className='mr-4'>Contact</li>
           <li className='mr-4'>
           <select className='border-none  rounded' name="" id="">
@@ -41,9 +63,9 @@ function App() {
         </ul>
       </div>
       <div className='flex text-center'>
-        <CiFacebook className='mr-4'></CiFacebook>
-        <TiSocialTwitterCircular className='mr-4'></TiSocialTwitterCircular>
-        <TiSocialLinkedinCircular className='mr-4'></TiSocialLinkedinCircular>
+        <CiFacebook className='mr-4 text-3xl'></CiFacebook>
+        <TiSocialTwitterCircular className='mr-4 text-3xl'></TiSocialTwitterCircular>
+        <TiSocialLinkedinCircular className='mr-4 text-3xl'></TiSocialLinkedinCircular>
 
       </div>
     </div>
